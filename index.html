@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>
+            Learn Javascript
+        </title>
+    </head>
+
+    <body>
+        <h1>Sneha Kapoor learning Javascript</h1>
+        <hr>
+        <h1 style="display: none;" id="my-second-dynamic-cont">My College name is LPU</h1>
+        <button onclick="changeContent() ">Change</button>
+        <br>
+
+        <h1 id="my-first-dynamic-cont"></h1>
+
+    </body>
+ 
+    <script src="myjs.js"></script>
+
+    <script>
+       // document.write("This is my first line ");
+       /* document.write("<h2>This is my second line of javascript</h2>");*/
+
+      // document.write(7+5);
+
+    //  alert("hello world");
+    //  window.alert("this is second way of giving alert msg");
+
+     //document.write(prompt("Enter your name"));
+
+     //var name = prompt("Enter other name");
+     // document.write(name);
+
+     //confirm("Would you like to exit");
+     //document.write(confirm("Would you like to exit"));
+
+    //  document.getElementById("my-first-dynamic-cont")
+    //  .innerHTML= "this is my dynamic content";
+
+    //Variables
+
+    // var a =18;
+    // var b=6;
+    // var n= 'Weroute';
+
+    // document.write("a + b = " + (a +b));
+    // document.write("<br>");
+    // document.write("a - b = ", (a-b), "<br>");
+    // document.write("a / b = ", (a/b), "<br>");
+
+    // document.write(typeof a, "<br>");
+
+    // document.write(typeof n, "<br>");
+
+    // //Another way
+
+    // let ab = 123;
+    // document.write(ab);
+
+    //DataType
+
+    // var name = "Sneha Kapoor";
+    // document.write(name, "<br>");
+    // document.write(typeof name, "<br>");
+    // document.write(name.length, "<br>");
+    // document.write(name.toUpperCase(), "<br>");
+    // document.write(name.charAt(6), "<br>");
+
+    // var bol = true;
+    // document.write(typeof bol, "<br>");
+
+    // object datatype
+
+    // var ob = {}
+    // var ob2 = {'name': 'Aditya', 'age': 23};
+    // document.write(typeof ob, "<br>");
+    // document.write(ob2['name'], "<br>");
+
+    //array
+
+    // var arr = [1,2,3,4];
+    // document.write(typeof arr, "<br>");
+    // document.write(arr.length, "<br>");
+    // document.write(arr[0], "<br>");
+
+    //control statement
+    // var n = prompt("Enter number");
+    // var a = parseInt(n);
+    // if(a > 0){
+    //     document.write("positive");
+    // }
+    // else if(a <0){
+    //     document.write("negative");
+    // }
+    // else{
+    //     document.write("zero");
+    // }
+
+    //for loop
+
+    // for(var i=0; i<5; i++){
+    //     document.write("<h1>", "I am Sneha ",i, "</h1>", "<br>");
+    // }
+
+//functions in Js
+
+//declaration :
+// function fun1(){
+//     document.write("Hello, I am function 1");
+// }
+
+// //calling
+
+// fun1();
+
+function changeContent(){
+    var element = document.getElementById("my-second-dynamic-cont");
+    element.innerHTML = "My College name is Lovely Professional University";
+    element.style.display= "block";
+    
+}
+     </script>
+
+</html>
